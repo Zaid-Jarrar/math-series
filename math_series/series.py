@@ -64,4 +64,7 @@ def sum_series(n, option1 = 0, option2 = 1 ):
     if n == 0: return option1
     elif n == 1: return option2
     else: 
-        return sum_series(n-1, option1 = option1, option2 = option2) + sum_series(n-2, option1 = option1, option2 = option2)
+        # return sum_series(n-1, option1 = option1, option2 = option2) + sum_series(n-2, option1 = option1, option2 = option2)
+        return sum_series(n-1, option1, option2) + sum_series(n-2, option1, option2)
+    # no need to have option1 = option1 ad option2 = option2. 
+    # just put option1 and option2
